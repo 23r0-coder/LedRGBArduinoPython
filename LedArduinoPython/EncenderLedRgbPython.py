@@ -12,7 +12,7 @@ board.digital[rojo].mode = PWM
 board.digital[azul].mode = PWM
 board.digital[verde].mode = PWM
 
-#manda numeros random del 0 al 255 para los colores y da un descanso de 0.5 segs y se ejecuta hasta que se desconecte.
+#manda numeros random del 0 al 255 para los colores y da un delay de 0.5 segs y se ejecuta hasta que se desconecte.
 while True:
    board.digital[rojo].write(random.random())
    board.digital[azul].write(random.random())
